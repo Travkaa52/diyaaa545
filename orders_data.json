@@ -1,0 +1,164 @@
+[
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "completed",
+    "created_at": "2025-11-22 14:32:09"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "completed",
+    "created_at": "2025-11-22T13:51:44.103265+02:00",
+    "tariff_key": "1_day",
+    "tariff_text": "1 день — 20₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "20.11.2000",
+    "status_updated_at": "2025-11-22T13:52:42.735572+02:00"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "waiting_req",
+    "created_at": "2025-11-22T13:54:37.293502+02:00",
+    "tariff_key": "1_day",
+    "tariff_text": "1 день — 20₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "11.00.2000"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "waiting_req",
+    "created_at": "2025-11-22T14:00:52.845432+02:00",
+    "tariff_key": "1_day",
+    "tariff_text": "1 день — 20₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "11.06.2009"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "waiting_req",
+    "created_at": "2025-11-22T14:09:30.259285+02:00",
+    "tariff_key": "1_day",
+    "tariff_text": "1 день — 20₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "11.22.0989"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "waiting_req",
+    "created_at": "2025-11-22T14:11:53.764198+02:00",
+    "tariff_key": "1_day",
+    "tariff_text": "1 день — 20₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "11.22.3333"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "waiting_req",
+    "created_at": "2025-11-22T14:13:18.442397+02:00",
+    "tariff_key": "1_day",
+    "tariff_text": "1 день — 20₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "11.22.3333"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "waiting_req",
+    "created_at": "2025-11-22T14:20:06.775764+02:00",
+    "tariff_key": "90_days",
+    "tariff_text": "90 днів — 150₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "11.00.9999"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "waiting_req",
+    "created_at": "2025-11-22T14:26:55.682282+02:00",
+    "tariff_key": "1_day",
+    "tariff_text": "1 день — 20₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "11.00.9999"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "waiting_req",
+    "created_at": "2025-11-22T15:40:59.295451+02:00",
+    "tariff_key": "1_day",
+    "tariff_text": "1 день — 20₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "11.22.3333"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "waiting_req",
+    "created_at": "2025-11-22T15:44:20.526159+02:00",
+    "tariff_key": "1_day",
+    "tariff_text": "1 день — 20₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "11.22.3333"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "waiting_payment",
+    "created_at": "2025-11-22T15:47:02.098642+02:00",
+    "tariff_key": "30_days",
+    "tariff_text": "30 днів — 70₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "11.22.2000",
+    "status_updated_at": "2025-11-22T15:47:05.675565+02:00"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "completed",
+    "created_at": "2025-11-22T16:36:43.790245+02:00",
+    "tariff_key": "30_days",
+    "tariff_text": "30 днів — 70₴",
+    "fio": "Касьян Дмитро Валерійович",
+    "dob": "11.22.2222",
+    "status_updated_at": "2025-11-22T16:37:32.022341+02:00"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "completed",
+    "created_at": "2025-11-22T16:40:34.496822+02:00",
+    "tariff_key": "forever",
+    "tariff_text": "Назавжди — 250₴",
+    "fio": "Касьян Дмитро Валентина",
+    "dob": "11.22.3333",
+    "status_updated_at": "2025-11-22T16:41:38.746479+02:00"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "completed",
+    "created_at": "2025-11-22T16:50:56.895092+02:00",
+    "tariff_key": "180_days",
+    "tariff_text": "180 днів — 190₴",
+    "fio": "Касьян Дмитро",
+    "dob": "11.22.222",
+    "status_updated_at": "2025-11-22T17:05:47.788901+02:00"
+  },
+  {
+    "client_id": "5423792783",
+    "username": "travka_1044",
+    "status": "waiting_payment",
+    "created_at": "2025-11-22T17:10:37.567149+02:00",
+    "tariff_key": "1_day",
+    "tariff_text": "1 день — 20₴",
+    "fio": "5423792783",
+    "dob": "Гаоаоа",
+    "status_updated_at": "2025-11-22T17:10:46.946336+02:00"
+  }
+]
