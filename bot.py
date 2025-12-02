@@ -202,8 +202,8 @@ async def admin_check(update: Update, context: ContextTypes.DEFAULT_TYPE) -> boo
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Обробляє команду /start."""
     context.user_data.clear()
-    keyboard = [[InlineKeyboardButton("Старт", callback_data="start_menu")]]
-    await update.message.reply_text("Вітаємо! Натисніть кнопку, щоб почати.", reply_markup=InlineKeyboardMarkup(keyboard))
+    keyboard = [[InlineKeyboardButton("Продовжити", callback_data="start_menu")]]
+    await update.message.reply_text("Вітаємо в додатку FunsDiia ! Натисніть нижче щоб розпочати!", reply_markup=InlineKeyboardMarkup(keyboard))
 
 async def start_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Обробляє головне меню."""
@@ -225,7 +225,7 @@ async def buy_product(update: Update, context: ContextTypes.DEFAULT_TYPE):
         rf"💎 Преміум Додаток \"FunsDiia\"" "\n\n"
         rf"💰 *Тарифи:*" "\n"
         f"{tariffs_list}\n\n"
-        rf"⏰ Після вибору тарифу та підтвердження, реквізити будуть відправлені з 10:00 \- 00:00 \(локальний час\)\." "\n\n"
+        rf"⏰ Після вибору тарифу та підтвердження, реквізити будуть відправлені з 10:00 \- 00:00 \." "\n\n"
         rf"*Оберіть необхідний тариф нижче:*"
     )
     
@@ -278,7 +278,7 @@ async def handle_user_input(update: Update, context: ContextTypes.DEFAULT_TYPE):
         context.user_data["fio"] = text
         context.user_data["order_state"] = AWAITING_DOB
         # ВИПРАВЛЕНО: Використовуємо HTML
-        await update.message.reply_text("Дякуємо! Тепер введіть Вашу дату народження (ДД.ММ.РРРР).", parse_mode="HTML")
+        await update.message.reply_text("Дякуємо! Тепер введіть  дату народження яку бажаєте використовувати для застосунку FunsDiia в форматі:(ДД.ММ.РРРР).", parse_mode="HTML")
         return
         
     if current_state == AWAITING_DOB:
@@ -302,7 +302,7 @@ async def handle_user_input(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # ВИПРАВЛЕНО: Використовуємо HTML
         await update.message.reply_text(
             "Будь ласка, надішліть фотографію 3×4 (портретне фото).\n\n"
-            "Порада: сфотографуйте на чистому фоні, без зайвих предметів.",
+            "Порада: сфотографуйтесь на білому фоні, без зайвих предметів.",
             parse_mode="HTML"
         )
         return
@@ -339,13 +339,13 @@ async def handle_all_media(update: Update, context: ContextTypes.DEFAULT_TYPE):
         safe_tariff = escape_html(last_order.get("tariff_text") or "")
         
         caption = (
-            f"🖼️ <b>НОВЕ ID ФОТО (3x4)</b>\n"
+            f"🖼️ <b>НОВЕ ЗАМОВЛЕННЯ (3x4)</b>\n"
             f"Клієнт ID: <code>{client_id}</code>\n"
             f"Username: @{safe_username}\n"
             f"Тариф: <b>{safe_tariff}</b>\n"
             f"ФІО: <b>{safe_fio}</b>\n"
             f"Дата народження: <b>{safe_dob}</b>\n\n"
-            f"Дія: <code>/send_req {client_id} (реквізити)</code>" # ID захищено тегом <code>
+            f"АДМИНУ: <code>/send_req {client_id} (реквізити)</code>" # ID захищено тегом <code>
         )
 
         try:
@@ -377,7 +377,7 @@ async def handle_all_media(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"💰 <b>НОВА КВИТАНЦІЯ</b>\n"
             f"Клієнт ID: <code>{client_id}</code>\n"
             f"Username: {safe_username}\n"
-            f"Дія: Підтвердіть платіж: <code>/confirm {client_id} (посилання)</code>"
+            f"Дія: Підтвердіть платіж: <code>/confirm {client_id} ССИЛКА</code>"
         )
 
         try:
@@ -389,7 +389,7 @@ async def handle_all_media(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await context.bot.send_document(chat_id=ADMIN_CHAT_ID, document=file_id, caption=caption_text, parse_mode="HTML")
             
             update_order_status(client_id, "waiting_confirm")
-            await message.reply_text("Ваш платіж перевіряється. Дякуємо!", parse_mode="HTML")
+            await message.reply_text("Ваш платіж перевіряється вручну Це займає приблизно 5-10 хвилин.Вибачте за незручності . Дякуємо!", parse_mode="HTML")
 
         except Exception as e:
             logger.exception("Error sending payment proof to admin: %s", e)
@@ -508,4 +508,5 @@ def main():
     application.run_polling()
 
 if __name__ == "__main__":
+
     main()
